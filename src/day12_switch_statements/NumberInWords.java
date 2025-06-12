@@ -1,4 +1,4 @@
-package Day12_switch_statements;
+package day12_switch_statements;
 
 public class NumberInWords {
     public static void main(String[] args) {
