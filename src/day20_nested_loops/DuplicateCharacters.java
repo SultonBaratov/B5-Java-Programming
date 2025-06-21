@@ -10,7 +10,7 @@ public class DuplicateCharacters {
             char outLetter = word.charAt(i);
 
             if (unique.contains("" + outLetter)) // this is to remove duplicate
-
+                continue; // This is responsible for removing Double "P"
 
             for (int j = 0; j < word.length(); j++) {
                 char innerLetter = word.charAt(j);
@@ -21,7 +21,7 @@ public class DuplicateCharacters {
                 }
 
             }
-            if (count > 1){
+            if (count <= 1){ // To make less than 1 (if i understood this part correct)
                 System.out.println(outLetter);
             }
             if (!unique.contains("" +outLetter)){
